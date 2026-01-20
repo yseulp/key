@@ -85,8 +85,11 @@ public class ProofCollections {
          * option.loadable("option.proof");
          */
 
-        var ghost = c.group("ghost");
-        ghost.provable("first-ghost.key");
+        var arrMRef = c.group("arr_mref");
+        arrMRef.provable("arr-mref.key");
+
+        // var ghost = c.group("ghost");
+        // ghost.provable("first-ghost.key");
         // ghost.provable("ghost-snap.key");
 
         // var algos = c.group("algorithms");

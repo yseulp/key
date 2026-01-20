@@ -71,3 +71,10 @@ pub fn test_tuple() -> (i32, i32) {
     a.0 = a.1 - 3;
     a
 }
+
+#[spec(name = "arr_mref", ensures(result === 3))]
+pub fn array_mref(a: &mut [i32; 2]) -> i32 {
+    let n = a[0];
+    a[1] = 3;
+    a[1]
+}
