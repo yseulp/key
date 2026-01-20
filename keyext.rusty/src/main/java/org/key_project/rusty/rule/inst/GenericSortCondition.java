@@ -95,7 +95,6 @@ public abstract class GenericSortCondition {
     /// GenericSortInstantiations)
     /// @return the resulting condition, or null if "p_s" is not generic
     public static GenericSortCondition forceInstantiation(Sort p_s, boolean p_maximum) {
-
         if (p_s instanceof GenericSort) {
             return createForceInstantiationCondition((GenericSort) p_s, p_maximum);
         }
